@@ -1,0 +1,159 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  padding-left: 4px;
+}
+
+.control {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: var(--color-surface);
+  border: 2.5px solid var(--color-border);
+  border-radius: var(--radius-control);
+  transition:
+    border-color 0.2s var(--ease-out),
+    box-shadow 0.2s var(--ease-out),
+    transform 0.2s var(--ease-out);
+}
+
+.control:hover {
+  border-color: var(--color-border-hover);
+}
+
+.control:focus-within {
+  border-color: var(--color-success);
+  box-shadow: 0 0 0 4px var(--color-success-ring);
+}
+
+.valid,
+.valid:hover {
+  border-color: var(--color-success);
+}
+
+.invalid,
+.invalid:hover,
+.invalid:focus-within {
+  border-color: var(--color-error);
+}
+
+.invalid:focus-within {
+  box-shadow: 0 0 0 4px var(--color-error-ring);
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  height: 54px;
+  padding: 0 18px;
+  border: 0;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  outline: none;
+  border-radius: var(--radius-control);
+}
+
+.input::placeholder {
+  color: var(--color-text-subtle);
+  font-weight: 500;
+}
+
+.input[type='password'] {
+  letter-spacing: 0.15em;
+}
+
+.input[type='password']::placeholder {
+  letter-spacing: normal;
+}
+
+.check {
+  display: inline-flex;
+  color: var(--color-success);
+  margin-right: 14px;
+  animation: pop 0.25s var(--ease-out);
+}
+
+.control:has(.toggle) .check {
+  margin-right: 2px;
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 6px;
+  padding: 0;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  color: var(--color-text-subtle);
+  cursor: pointer;
+  transition:
+    color 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.toggle:hover {
+  color: var(--color-text);
+  background: #f4f4f4;
+}
+
+.toggle:focus-visible {
+  outline: 2px solid var(--color-success);
+  outline-offset: 1px;
+  color: var(--color-text);
+}
+
+.hint {
+  min-height: 0;
+  padding-left: 4px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+.hint:empty {
+  display: none;
+}
+
+.error {
+  margin: 0;
+  padding-left: 4px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--color-error);
+  animation: slide-in 0.2s var(--ease-out);
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-4px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
