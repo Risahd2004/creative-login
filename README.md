@@ -4,6 +4,10 @@
 
 **Playful characters that react while you log in.**
 
+<p align="center">
+  <img src="docs/demo.gif" alt="Animated demo: each character grows, fills up or lights up as a stronger password is typed" width="360" />
+</p>
+
 Animated characters for login and password forms, built with React and SVG.
 Each character reacts to what the user does:
 
