@@ -250,8 +250,12 @@ export function LoginPage({
         </header>
 
         <div ref={illustrationRef} className={styles.illustration} data-mood={mood}>
+          {/* Entrance animation and mood reactions live on separate elements so
+              a finished shake/hop doesn't replay the entrance fade. */}
           <div key={character.id} className={styles.actor}>
-            <character.Component stretch={strength.score} mood={mood} look={look} />
+            <div className={styles.reaction}>
+              <character.Component stretch={strength.score} mood={mood} look={look} />
+            </div>
           </div>
           <Burst emoji={character.confetti} tick={burstTick} />
         </div>

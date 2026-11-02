@@ -59,11 +59,11 @@
   animation: actor-in 0.45s cubic-bezier(0.34, 1.4, 0.64, 1) both;
 }
 
-.illustration[data-mood='error'] .actor {
+.illustration[data-mood='error'] .reaction {
   animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
 
-.illustration[data-mood='happy'] .actor {
+.illustration[data-mood='happy'] .reaction {
   animation: hop 0.8s cubic-bezier(0.34, 1.4, 0.64, 1) 2;
 }
 
