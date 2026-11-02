@@ -103,12 +103,6 @@ Contributions of more characters are very welcome!
 
 New characters are very welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## Deploying
-
-Pushing to `main` builds the site and publishes it to GitHub Pages via
-`.github/workflows/deploy.yml`. One-time setup: in the repo go to
-**Settings → Pages → Source** and choose **GitHub Actions**.
-
 ## License
 
 [MIT](LICENSE) © 2026 Risahd. You're free to use, change and share it, including in
