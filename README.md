@@ -25,7 +25,6 @@ Each character reacts to what the user does:
 
 | Character            | What strength does                                          |
 | -------------------- | ----------------------------------------------------------- |
-| 🐶 Sausage dog       | Body stretches longer                                       |
 | 🐘 Perahera elephant | Raises its trunk; Perahera lamps light up one by one        |
 | 🦚 Peacock           | Tail fans open                                              |
 | 🛺 Tuk-tuk           | Stretches into a limousine, wheels spin, exhaust puffs      |
@@ -100,7 +99,7 @@ Contributions of more characters are very welcome!
 ## Credits
 
 - Characters, mood system, gallery and website by **Risahd**.
-- The stretchy-dachshund password idea was inspired by a design seen online.
+- The idea of a character that stretches with password strength was inspired by a design seen online.
   <!-- TODO: add the original creator's name and a link here. -->
 
 ## Contributing
